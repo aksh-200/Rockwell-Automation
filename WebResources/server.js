@@ -43,5 +43,25 @@ app.get("/", (req, res)=>{
     res.sendFile(path.join(__dirname + '/index.html'));
 });
 
+app.get("/contact", (req, res)=>{
+   res.sendFile(path.join(__dirname + '/contact.html'));
+});
+
+app.get("/cart", (req, res)=>{
+   res.sendFile(path.join(__dirname + '/cart.html'));
+});
+
+app.get("/contact", (req, res)=>{
+   res.sendFile(path.join(__dirname + '/details.html'));
+});
+
+app.get("/contact", (req, res)=>{
+   res.sendFile(path.join(__dirname + '/login.html'));
+});
+
+app.get("/contact", (req, res)=>{
+   res.sendFile(path.join(__dirname + '/register.html'));
+});
+
 app.listen(8000);
 console.log("ShoppingCart Web App is listening on port 8000");
